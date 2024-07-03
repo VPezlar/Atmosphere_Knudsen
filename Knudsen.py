@@ -13,10 +13,10 @@ L = 0.005
 # Max Altitude
 H = 100000  # [m]
 
-# Assumed limit of computational resources between continuum and DSMC calculations
+# Assumed limit of computational resources between continuum and DSMC calculations (Based on histiorical developments)
 K_lim = 0.004
 
-# Atmospheric profile from 0 to H
+# Atmospheric profile from 0 to H, with step=1
 ds = ussa1976.compute(z=np.arange(0.0, H, 1.0))
 
 # Extracting number density
